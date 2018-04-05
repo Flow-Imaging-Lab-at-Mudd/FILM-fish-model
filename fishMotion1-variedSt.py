@@ -71,15 +71,16 @@ def k1(u):
     '''
     return 2*math.pi/(dimLam*1)
 
+
 times = [0, 0.1, 0.2, 0.3, 0.5, 1, 2, 4, 9, 10, 20]
-time = 0.2
+time = 1
 # Makes list with values 0-1 with 1/clarity increments
 clarity = 100
 zVals = range(0,clarity)
 zVals = [z/clarity for z in zVals]
 
 # Makes list of u vals
-numUVals = 3
+numUVals = 6
 uVals = range(-numUVals,numUVals)
 uVals = [u/numUVals+.1 for u in uVals]
 
@@ -87,8 +88,10 @@ uVals = [u/numUVals+.1 for u in uVals]
 # The list comprehension seems to work, but I keep getting the same few values for multiple values of time
 hVals = [[h(z, t) for z in zVals] for t in times]
 
+
 # Try to use h2 function to vary omega
 h2Vals = [[h2(z, time, omega1(u), k1(u)) for z in zVals] for u in uVals]
+aVals = [a(z) for z in zVals]
 
 # Various debugging attempts
 #hVals = [h(z, times[9]) for z in zVals]
@@ -104,8 +107,10 @@ h2Vals = [[h2(z, time, omega1(u), k1(u)) for z in zVals] for u in uVals]
 #     plt.plot(zVals, hFxn)
 # f.show()
 
-for h2Fxn in h2Vals:
-    plt.plot(zVals, h2Fxn)
+# for h2Fxn in h2Vals:
+#     print(h2Fxn)
+#     plt.plot(zVals, h2Fxn)
+plt.plot(zVals, aVals)
 plt.show()
 
 # plt.plot(zVals,hVals[1],zVals,hVals[3])
