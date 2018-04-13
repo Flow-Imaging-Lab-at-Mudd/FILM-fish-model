@@ -5,6 +5,7 @@
 
 import math
 import matplotlib.pyplot as plt
+import "fishMotion1-variedSt.py"
 
 '''
     RELEVANT CONSTANTS
