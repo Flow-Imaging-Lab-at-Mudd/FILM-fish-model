@@ -45,6 +45,9 @@ def a(z):
     '''
     return (a0 + a1*z +a2*(z**2))
 
+def dAdZ(z):
+    return (a1+2*a2*z)
+
 def h(z, t):
     '''
         Represents the lateral excursion of the fish at time t
@@ -71,6 +74,12 @@ def k1(u):
     '''
     return 2*math.pi/(dimLam*1)
 
+def dHdZ(z, t):
+    '''
+        Finds Borijani's dh/dz at a given z and t
+    '''
+    return (dAdZ(z)*math.sin(k*z-omega*t) +a(z)*k*math.cos(k*z-omega*t))
+
 
 times = [0, 0.1, 0.2, 0.3, 0.5, 1, 2, 4, 9, 10, 20]
 time = 1
@@ -93,24 +102,24 @@ hVals = [[h(z, t) for z in zVals] for t in times]
 h2Vals = [[h2(z, time, omega1(u), k1(u)) for z in zVals] for u in uVals]
 aVals = [a(z) for z in zVals]
 
-# Various debugging attempts
-#hVals = [h(z, times[9]) for z in zVals]
-#plt.plot(zVals, hVals)
+# Determine (dh/dz)^2, then calculate the derivative of the arclength
+dhdz2Vals = [dHdZ(z,time)**2 for z in zVals]
+sPrime = [math.sqrt(1+dHdZ(z,time)**2) for z in zVals]
 
-# hVals = []
-# for t in times:
-#     hVals.append([h(z, t) for z in zVals])
+dz = L/clarity
+print(dz)
+sRects = [sP*dz for sP in sPrime]
+arcLen = [sum(sRects[0:z]) for z in range(0,len(sRects))]
 
-# Print the h values for each time
-# f = plt.figure(1)
-# for hFxn in hVals:
-#     plt.plot(zVals, hFxn)
-# f.show()
+def estArc(z):
+    '''
+        Calculates the estimated arc length 
+    '''
+    return sum(sRects[0:z*clarity])
 
-# for h2Fxn in h2Vals:
-#     print(h2Fxn)
-#     plt.plot(zVals, h2Fxn)
-plt.plot(zVals, aVals)
+
+
+plt.plot(zVals, arcLen)
 plt.show()
 
 # plt.plot(zVals,hVals[1],zVals,hVals[3])
@@ -121,5 +130,11 @@ plt.show()
 # print(len(hVals[2]))
 # plt.plot(zVals,hVals[3])
 # print(len(hVals[3]))
+
+'''
+    Finish find a-coord (arcLen)
+    Xl = Zb
+    Lighthill's dx/da = sqrt(1+dhdz^2)
+'''
 
 # Show the plot
