@@ -10,10 +10,17 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
+<<<<<<< Updated upstream
 NotebookDataLength[    181685,       3458]
 NotebookOptionsPosition[    178953,       3369]
 NotebookOutlinePosition[    179295,       3384]
 CellTagsIndexPosition[    179252,       3381]
+=======
+NotebookDataLength[    190702,       3661]
+NotebookOptionsPosition[    185900,       3574]
+NotebookOutlinePosition[    186258,       3590]
+CellTagsIndexPosition[    186215,       3587]
+>>>>>>> Stashed changes
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -100,6 +107,7 @@ Cell[BoxData[
 
 Cell[TextData[{
  "where\n\[Bullet]",
+<<<<<<< Updated upstream
  StyleBox["z",
   FontSlant->"Italic"],
  " is the axial (flow) direction measured along the fish axis from the tip of \
@@ -112,25 +120,69 @@ the fish head\n\[Bullet]",
  "\[Bullet]",
  StyleBox["a(z)",
   FontSlant->"Italic"],
+=======
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]],ExpressionUUID->
+  "c186f696-e042-41bc-90cc-77af2a7f46d8"],
+ " is the axial (flow) direction measured along the fish axis from the tip of \
+the fish head (essentially Lighthill\[CloseCurlyQuote]s x-coordinate)\n\
+\[Bullet]",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"h", 
+    RowBox[{"(", 
+     RowBox[{"z", ",", "t"}], ")"}]}], TraditionalForm]],ExpressionUUID->
+  "d6272724-3a5a-4cc8-874c-b98f7867d054"],
+ " is the lateral (side-to-side) excursion at time ",
+ StyleBox["t ",
+  FontSlant->"Italic"],
+ "(essentially Lighthill\[CloseCurlyQuote]s z-coordinate)",
+ StyleBox["\n",
+  FontSlant->"Italic"],
+ "\[Bullet]",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", 
+    RowBox[{"(", "z", ")"}]}], TraditionalForm]],ExpressionUUID->
+  "7d404885-ff4f-4f7e-bd44-e9563e9f1947"],
+>>>>>>> Stashed changes
  " is the first Fourier coefficient defining the amplitude envelope of \
 lateral motion as a function of ",
  StyleBox["z",
   FontSlant->"Italic"],
  "\n\[Bullet]",
+<<<<<<< Updated upstream
  StyleBox["k",
   FontSlant->"Italic"],
  " is the wave number of the body undulations that corresponds to a \
 wavelength \[Lambda]\n\[Bullet]",
  StyleBox["\[Omega]",
   FontSlant->"Italic"],
+=======
+ Cell[BoxData[
+  FormBox["k", TraditionalForm]],ExpressionUUID->
+  "5bcffa86-7f51-462a-9f53-59549883b945"],
+ " is the wave number of the body undulations that corresponds to a \
+wavelength \[Lambda]\n\[Bullet]",
+ Cell[BoxData[
+  FormBox["\[Omega]", TraditionalForm]],ExpressionUUID->
+  "69491536-8c80-425a-b4e4-ecf368462003"],
+>>>>>>> Stashed changes
  " is the angular frequency\nThe values given below were experimentally \
 determined by Videler and Hess."
 }], "Text",
  InitializationCell->True,
  CellChangeTimes->{{3.730825953845842*^9, 3.730825968256645*^9}, {
   3.73082599967131*^9, 3.730826012724762*^9}, {3.730826075723648*^9, 
+<<<<<<< Updated upstream
   3.730826197578738*^9}, {3.730826605927622*^9, 
   3.730826632587439*^9}},ExpressionUUID->"0fb65e26-f3c5-44a8-83bb-\
+=======
+  3.730826197578738*^9}, {3.730826605927622*^9, 3.730826632587439*^9}, {
+  3.731933734792139*^9, 3.731933755949945*^9}, {3.732639004210288*^9, 
+  3.732639006163641*^9}, {3.73263947895708*^9, 
+  3.732639514676285*^9}},ExpressionUUID->"0fb65e26-f3c5-44a8-83bb-\
+>>>>>>> Stashed changes
 8be56c6fab52"],
 
 Cell[CellGroupData[{
@@ -483,7 +535,8 @@ Cell[BoxData[
         SuperscriptBox["z", "2"]}]}], ")"}]}], " ", 
     RowBox[{"Sin", "[", 
      RowBox[{"188.49555921538757`", "\[VeryThinSpace]", "-", 
-      RowBox[{"6.613879270715354`", " ", "z"}]}], "]"}]}]}], "}"}]], "Output",
+      RowBox[{"6.613879270715354`", " ", "z"}]}], "]"}]}]}], "}"}]], "Output",\
+
  CellChangeTimes->{
   3.728409963230488*^9, {3.728410251683268*^9, 3.7284102615400257`*^9}, 
    3.728410468973579*^9, 3.728410500364921*^9, {3.728410609307499*^9, 
@@ -2972,6 +3025,7 @@ Cell[TextData[{
  "Lighthill\[CloseCurlyQuote]s elongated-body theory makes use of three \
 principles:\n\t(i) Water momentum near a section of fish is in a direction \
 perpendicular to the backbone and has magnitude equal to the virtual mass, ",
+<<<<<<< Updated upstream
  StyleBox["m ",
   FontSlant->"Italic"],
  "per unit length, times the component ",
@@ -2984,12 +3038,37 @@ perpendicular to the caudal fin through its posterior end.\n\t(iii) In the \
 momentum balance it is necessary to take into account transfer of momentum \
 across \[CapitalPi] not only by convection but also by the action of the \
 resultant ",
+=======
+ Cell[BoxData[
+  FormBox["m", TraditionalForm]],ExpressionUUID->
+  "08725bb1-5476-4c95-9421-0b63be50a0eb"],
+ StyleBox[" ",
+  FontSlant->"Italic"],
+ "per unit length, times the component ",
+ Cell[BoxData[
+  FormBox["w", TraditionalForm]],ExpressionUUID->
+  "a711fc8a-914b-44e4-a0b0-ecfaa592df63"],
+ " of fish velocity in that direction.\n\t(ii) Thrust can be obtained by \
+considering rate of change of momentum within a volume enclosing the fish \
+whose boundary at each instant includes a flat surface ",
+ Cell[BoxData[
+  FormBox["\[CapitalPi]", TraditionalForm]],ExpressionUUID->
+  "1371ff96-edfd-4c8f-8483-72670a33ffd7"],
+ " perpendicular to the caudal fin through its posterior end.\n\t(iii) In the \
+momentum balance it is necessary to take into account transfer of momentum \
+across ",
+ Cell[BoxData[
+  FormBox["\[CapitalPi]", TraditionalForm]],ExpressionUUID->
+  "c75132bc-c944-405f-b8a6-fa62335c0314"],
+ " not only by convection but also by the action of the resultant ",
+>>>>>>> Stashed changes
  Cell[BoxData[
   FormBox[
    RowBox[{
     FractionBox["1", "2"], 
     SuperscriptBox["mw", "2"]}], TraditionalForm]],ExpressionUUID->
   "82a3fdb5-60e8-4eef-a2f1-6cfdc34c49b4"],
+<<<<<<< Updated upstream
  "of the pressures generated by the motions within the plane \[CapitalPi]."
 }], "Text",
  CellChangeTimes->{{3.730827085437051*^9, 
@@ -3022,6 +3101,340 @@ Cell[BoxData[{
     RowBox[{"D", "[", 
      RowBox[{"z", ",", "a"}], "]"}]}]}]}]}], "Input",ExpressionUUID->\
 "4164cafb-79f9-4a1b-af9f-eefc842c4361"],
+=======
+ "of the pressures generated by the motions within the plane ",
+ Cell[BoxData[
+  FormBox["\[CapitalPi]", TraditionalForm]],ExpressionUUID->
+  "c235b84f-0047-4a33-a6f1-fd681cb70cc7"],
+ ".\n\nThe coordinates used by Lighthill are:\n\[Bullet]",
+ Cell[BoxData[
+  FormBox["y", TraditionalForm]],ExpressionUUID->
+  "d2d306c8-e441-4ac0-a9a8-0767c72b08a9"],
+ "-axis as the vertical\n\[Bullet]",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],ExpressionUUID->
+  "dde7f02a-79a3-43ef-a945-6f687bd03c34"],
+ StyleBox["-",
+  FontSlant->"Italic"],
+ "axis and ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]],ExpressionUUID->
+  "67dea465-8d75-43ff-a20e-532b340612b4"],
+ StyleBox["-axis as the horizontal\n\[Bullet]Lagrangian coordinate ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox["a", TraditionalForm]],ExpressionUUID->
+  "b58b919c-a1e2-44eb-ab63-978b0297acb5"],
+ StyleBox[" along the fish body that takes values from 0 (tail) to ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox["l", TraditionalForm]],ExpressionUUID->
+  "c39df18f-ff81-4e55-95f3-a37415329827"],
+ " (head)",
+ StyleBox[", the length of the fish\nwhere a left-handed system of axes is \
+used.",
+  FontSize->14],
+ "\t\n\nIn addition, we have several notation:\n",
+ StyleBox["\[Bullet]",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{"u", ",", "w"}], ")"}], TraditionalForm]],ExpressionUUID->
+  "12f704e0-de1d-4beb-89d4-327dce5d7fd4"],
+ " is the horizontal velocity vector (in the Lagrangian fish body frame), \
+where ",
+ Cell[BoxData[
+  FormBox["u", TraditionalForm]],ExpressionUUID->
+  "5c2abd78-96c0-44d5-a86d-7fe263997908"],
+ " is the tangential component (forward direction) and ",
+ Cell[BoxData[
+  FormBox["w", TraditionalForm]],ExpressionUUID->
+  "964aceee-851c-4fcc-8b42-c1b940e2391d"],
+ " is the perpendicular component (lateral direction) of the fish body\n\
+\[Bullet]",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{"P", ",", "Q"}], ")"}], TraditionalForm]],ExpressionUUID->
+  "0bb77d42-b91a-42a8-a7ba-ab8667f98509"],
+ " is the force vector where ",
+ Cell[BoxData[
+  FormBox["P", TraditionalForm]],ExpressionUUID->
+  "5b4ecabd-d817-4824-bdca-d0ae49f851de"],
+ " is thrust and ",
+ Cell[BoxData[
+  FormBox["Q", TraditionalForm]],ExpressionUUID->
+  "5c5edd13-8ab5-4a62-bfbb-4a5f0d91fcb9"],
+ " is sideforce; ",
+ Cell[BoxData[
+  FormBox["P", TraditionalForm]],ExpressionUUID->
+  "11a0b2da-4e64-4f9c-bc59-d3802c9e6243"],
+ " is forward direction, ",
+ Cell[BoxData[
+  FormBox["Q", TraditionalForm]],ExpressionUUID->
+  "4416de3e-860b-473c-8bc9-3461c515e4b5"],
+ " is lateral direction\n",
+ StyleBox["\[Bullet]",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox["V", TraditionalForm]],ExpressionUUID->
+  "d32127fb-e3fa-4b89-88a7-075285096bd4"],
+ " is the magnitude of the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{"u", ",", "w"}], ")"}], TraditionalForm]],ExpressionUUID->
+  "d1cf6f41-e288-47a6-b1e6-2e2cbd7c0c48"],
+ "\n",
+ StyleBox["\[Bullet]",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox["W", TraditionalForm]],ExpressionUUID->
+  "a60a7618-e5dd-431e-9932-443fd6ebb923"],
+ " is the component perpendicular to the direction of mean motion\nIn an \
+elongated body form, the virtual mass is large in respect of the ",
+ Cell[BoxData[
+  FormBox["w", TraditionalForm]],ExpressionUUID->
+  "ac06a79a-0378-4da3-9fd5-223159890b5f"],
+ " motions, while the ",
+ Cell[BoxData[
+  FormBox["u", TraditionalForm]],ExpressionUUID->
+  "c93ca498-1681-498f-81b5-eeed4dd216d4"],
+ " motions have negligible virtual mass.\n\nThe inextensibility of the fish\
+\[CloseCurlyQuote]s spinal column requires ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox[
+        RowBox[{"\[PartialD]", "x"}], 
+        RowBox[{"\[PartialD]", "a"}]], ")"}], "2"], "+", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox[
+        RowBox[{"\[PartialD]", "z"}], 
+        RowBox[{"\[PartialD]", "a"}]], ")"}], "2"]}], "=", "1"}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "71916e78-d2bd-4866-a527-78a6a74b7517"],
+ ". \nThe horizontal velocity vector (in a left-handed x-z coordinate system) \
+",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"\[PartialD]", "x"}], 
+      RowBox[{"\[PartialD]", "t"}]], ",", 
+     FractionBox[
+      RowBox[{"\[PartialD]", "z"}], 
+      RowBox[{"\[PartialD]", "t"}]]}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "447461a0-ad99-4574-89da-7052aa59f761"],
+ "has a tangential component (relative to the spinal column) ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"u", "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox[
+       RowBox[{"\[PartialD]", "x"}], 
+       RowBox[{"\[PartialD]", "t"}]], 
+      FractionBox[
+       RowBox[{"\[PartialD]", "x"}], 
+       RowBox[{"\[PartialD]", "a"}]]}], "+", 
+     RowBox[{
+      FractionBox[
+       RowBox[{"\[PartialD]", "z"}], 
+       RowBox[{"\[PartialD]", "t"}]], 
+      FractionBox[
+       RowBox[{"\[PartialD]", "z"}], 
+       RowBox[{"\[PartialD]", "a"}]]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "bc502347-e3ee-4050-bf2b-6045206a4129"],
+ "and a perpendicular component ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"w", "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox[
+       RowBox[{"\[PartialD]", "z"}], 
+       RowBox[{"\[PartialD]", "t"}]], 
+      FractionBox[
+       RowBox[{"\[PartialD]", "x"}], 
+       RowBox[{"\[PartialD]", "a"}]]}], "-", 
+     RowBox[{
+      FractionBox[
+       RowBox[{"\[PartialD]", "x"}], 
+       RowBox[{"\[PartialD]", "t"}]], 
+      FractionBox[
+       RowBox[{"\[PartialD]", "z"}], 
+       RowBox[{"\[PartialD]", "a"}]]}]}]}], TraditionalForm]],ExpressionUUID->
+  "2ea13cb7-49ea-4af2-a260-3c54203bd51b"],
+ ". \nThe momentum per unit length of fish is represented by the vector ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox["mw",
+     FontSlant->"Italic"], "(", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{"\[PartialD]", "z"}], 
+       RowBox[{"\[PartialD]", "a"}]]}], ",", 
+     FractionBox[
+      RowBox[{"\[PartialD]", "x"}], 
+      RowBox[{"\[PartialD]", "a"}]]}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "9cabedcf-97ee-40fd-a27b-8ae1ca67aa2c"],
+ "where the factor in parentheses is a unit vector in the ",
+ Cell[BoxData[
+  FormBox["w", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "46647fed-e130-432f-803f-72b678a45957"],
+ "-direction.\nIn general, \n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"P", ",", "Q"}], ")"}], "=", 
+    RowBox[{
+     SubscriptBox[
+      RowBox[{"[", 
+       RowBox[{
+        RowBox[{
+         StyleBox["mw",
+          FontSlant->"Italic"], "(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"\[PartialD]", "z"}], 
+           RowBox[{"\[PartialD]", "t"}]], ",", 
+          RowBox[{"-", 
+           FractionBox[
+            RowBox[{"\[PartialD]", "x"}], 
+            RowBox[{"\[PartialD]", "t"}]]}]}], ")"}], "-", 
+        RowBox[{
+         FractionBox["1", "2"], 
+         RowBox[{
+          SuperscriptBox[
+           StyleBox["mw",
+            FontSlant->"Italic"], "2"], "(", 
+          RowBox[{
+           FractionBox[
+            RowBox[{"\[PartialD]", "x"}], 
+            RowBox[{"\[PartialD]", "a"}]], ",", 
+           FractionBox[
+            RowBox[{"\[PartialD]", "z"}], 
+            RowBox[{"\[PartialD]", "a"}]]}], ")"}]}]}], "]"}], 
+      RowBox[{"a", "=", "0"}]], "-", 
+     RowBox[{
+      FractionBox[
+       StyleBox["d",
+        FontSlant->"Plain"], "dt"], 
+      RowBox[{
+       SubsuperscriptBox["\[Integral]", "0", "l"], 
+       RowBox[{
+        RowBox[{
+         StyleBox["mw",
+          FontSlant->"Italic"], "(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            RowBox[{"\[PartialD]", "z"}], 
+            RowBox[{"\[PartialD]", "a"}]]}], ",", 
+          FractionBox[
+           RowBox[{"\[PartialD]", "x"}], 
+           RowBox[{"\[PartialD]", "a"}]]}], ")"}], 
+        RowBox[{"\[DifferentialD]", "a"}]}]}]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "af2908e5-6518-4e5e-96d2-a7ff281ea46c"]
+}], "Text",
+ CellChangeTimes->{{3.730827085437051*^9, 3.73082729824782*^9}, {
+   3.7319323258312263`*^9, 3.731932408502967*^9}, {3.731932925122099*^9, 
+   3.731932938190319*^9}, {3.7319335524635973`*^9, 3.731933567953043*^9}, {
+   3.73193376441568*^9, 3.7319338260144157`*^9}, {3.731933910870026*^9, 
+   3.731934075079071*^9}, {3.7319341399040127`*^9, 3.731934297653882*^9}, {
+   3.731934344421534*^9, 3.731934354689015*^9}, 3.731934551249243*^9, {
+   3.73193460540562*^9, 3.731934620209506*^9}, {3.73193477370676*^9, 
+   3.731934819431656*^9}, {3.7319348642870197`*^9, 3.731934896549849*^9}, {
+   3.731934950223693*^9, 3.7319350002560797`*^9}, {3.731935036876198*^9, 
+   3.731935072101573*^9}, {3.7326367568942833`*^9, 3.732636795956295*^9}, {
+   3.732636836215769*^9, 3.732637113821047*^9}, {3.732637147328355*^9, 
+   3.732637147771916*^9}, {3.732637184762231*^9, 3.732637206348682*^9}, {
+   3.732637238085905*^9, 3.732637265995455*^9}, {3.732637354939743*^9, 
+   3.73263736307517*^9}, {3.732637393303199*^9, 3.7326374153849173`*^9}, {
+   3.732637454403433*^9, 3.732637567294065*^9}, {3.73263782223324*^9, 
+   3.7326378232275467`*^9}, {3.732637857192718*^9, 3.732637920746229*^9}, {
+   3.73263798966469*^9, 3.73263805693274*^9}, {3.7326381061750937`*^9, 
+   3.732638149458206*^9}},ExpressionUUID->"d98c2ee9-eb46-47f3-99d3-\
+073a70c73993"],
+
+Cell[CellGroupData[{
+
+Cell["Analytical Computation", "Section",
+ CellChangeTimes->{{3.732638238177524*^9, 
+  3.7326382455938377`*^9}},ExpressionUUID->"bdb2fa93-f12d-49b0-9a6e-\
+b861f614e9f9"],
+
+Cell[BoxData[
+ RowBox[{"velocityVector", "[", 
+  RowBox[{"x_", ",", "z_", ",", "a_", ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"forceVector", "[", 
+     RowBox[{"x_", ",", "z_", ",", "a_", ",", "t_", ",", "m_"}], "]"}], ":=", 
+    
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"u", ",", "w"}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"u", "=", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"D", "[", 
+           RowBox[{"x", ",", "t"}], "]"}], "*", 
+          RowBox[{"D", "[", 
+           RowBox[{"x", ",", "a"}], "]"}]}], "+", 
+         RowBox[{
+          RowBox[{"D", "[", 
+           RowBox[{"z", ",", "t"}], "]"}], "*", 
+          RowBox[{"D", "[", 
+           RowBox[{"z", ",", "a"}], "]"}]}]}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"w", "=", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"D", "[", 
+           RowBox[{"z", ",", "t"}], "]"}], "*", 
+          RowBox[{"D", "[", 
+           RowBox[{"x", ",", "a"}], "]"}]}], "-", 
+         RowBox[{
+          RowBox[{"D", "[", 
+           RowBox[{"x", ",", "t"}], "]"}], "*", 
+          RowBox[{"D", "[", 
+           RowBox[{"z", ",", "a"}], "]"}]}]}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"P", ",", "Q"}], "}"}], "=", 
+        RowBox[{"m", " ", "w"}]}]}]}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.732638381872946*^9, 3.732638412197548*^9}, {
+   3.732638452371107*^9, 3.732638460913661*^9}, {3.7326384951442547`*^9, 
+   3.732638591057211*^9}, 3.7326390424225388`*^9, {3.732639095821657*^9, 
+   3.732639098771483*^9}, {3.732639140578905*^9, 
+   3.732639144957645*^9}},ExpressionUUID->"2dd1f394-a451-4e25-8ff9-\
+8839062a99cf"],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{{3.7319336467888823`*^9, 3.731933689985746*^9}, {
+  3.732638518629673*^9, 
+  3.7326385345848846`*^9}},ExpressionUUID->"4164cafb-79f9-4a1b-af9f-\
+eefc842c4361"],
+
+Cell[CellGroupData[{
+>>>>>>> Stashed changes
 
 Cell[BoxData[
  RowBox[{"m", "=", 
@@ -3089,6 +3502,7 @@ Cell[BoxData[
     RowBox[{"P2", ",", " ", "Q2"}], "}"}]}]}]], "Input",ExpressionUUID->\
 "b4b1b644-d57e-4ed7-9da4-78c9e36f6521"],
 
+<<<<<<< Updated upstream
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", 
   RowBox[{
@@ -3179,10 +3593,36 @@ Cell[BoxData["ClearAll"], "Input",
 Cell[BoxData["ClearAll"], "Output",
  CellChangeTimes->{3.7331688474506836`*^9}]
 }, Open  ]],
+=======
+Cell["-F vs v plots", "Text",
+ CellChangeTimes->{{3.731328890230442*^9, 
+  3.731328894005063*^9}},ExpressionUUID->"9a30c199-9cb6-4f16-950e-\
+afb4c206167a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Scratchwork", "Section",
+ CellChangeTimes->{{3.7326399415115*^9, 
+  3.732639948448043*^9}},ExpressionUUID->"23e98665-8b42-4072-82d8-\
+b63d66f6f2be"],
+
+Cell["\<\
+Trying to relate Borazjani\[CloseCurlyQuote]s h and z in terms of Lagrangian \
+coordinate
+Next time: plot s over t and see if it stays constant (preserves body length)\
+\
+\>", "Text",
+ CellChangeTimes->{{3.732639968584443*^9, 3.7326399826203423`*^9}, {
+  3.732640448760542*^9, 
+  3.7326404672220182`*^9}},ExpressionUUID->"0c720920-187f-4cb7-9ae0-\
+29d4843411ed"],
+>>>>>>> Stashed changes
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
+<<<<<<< Updated upstream
  RowBox[{"\[IndentingNewLine]", 
   RowBox[{
    RowBox[{"a0", "=", "0.02"}], "\n", 
@@ -3300,10 +3740,54 @@ Cell[BoxData[{
      RowBox[{"{", 
       RowBox[{"z", ",", " ", "z0", ",", "zf"}], "}"}]}], "]"}]}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+=======
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{"dhdz", "=", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"a1", "+", 
+         RowBox[{"2", " ", "a2", " ", "z"}]}], ")"}], 
+       RowBox[{"Sin", "[", 
+        RowBox[{
+         RowBox[{"k", " ", "z"}], "-", 
+         RowBox[{"\[Omega]", " ", "t"}]}], "]"}]}], "+", 
+      RowBox[{"k", 
+       RowBox[{"(", 
+        RowBox[{"a1", "+", 
+         RowBox[{"a1", " ", "z"}], "+", 
+         RowBox[{"a2", " ", 
+          SuperscriptBox["z", "2"]}]}], ")"}], 
+       RowBox[{"Cos", "[", 
+        RowBox[{
+         RowBox[{"k", " ", "z"}], " ", "-", " ", 
+         RowBox[{"\[Omega]", " ", "t"}]}], "]"}]}]}], ")"}]}], ";", 
+   "\[IndentingNewLine]", 
+   SuperscriptBox[
+    RowBox[{"(", "dhdz", ")"}], "2"]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.732639956836306*^9, 3.7326399658569593`*^9}, {
+   3.732639999673503*^9, 3.732640202328739*^9}, {3.732640266524433*^9, 
+   3.732640326180504*^9}, 
+   3.7326403729804287`*^9},ExpressionUUID->"3562000e-cffa-4d97-a8dd-\
+eea02c9e2137"],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{
+  3.7326403976841507`*^9},ExpressionUUID->"4582dc04-eb3c-4dde-9668-\
+41c3b12db909"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+>>>>>>> Stashed changes
  RowBox[{"Integrate", "[", 
   RowBox[{
    RowBox[{"Sqrt", "[", 
     RowBox[{"1", "+", 
+<<<<<<< Updated upstream
      RowBox[{
       RowBox[{"(", 
        RowBox[{
@@ -3363,6 +3847,69 @@ Cell[BoxData[
        "2"]}], ")"}]}], 
    RowBox[{"\[DifferentialD]", "z"}]}]}]], "Output",
  CellChangeTimes->{3.7331705480477343`*^9}]
+=======
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"a1", "+", 
+            RowBox[{"2", " ", "a2", " ", "z"}]}], ")"}], 
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"k", " ", "z"}], "-", 
+            RowBox[{"\[Omega]", " ", "t"}]}], "]"}]}], "+", 
+         RowBox[{"k", 
+          RowBox[{"(", 
+           RowBox[{"a1", "+", 
+            RowBox[{"a1", " ", "z"}], "+", 
+            RowBox[{"a2", " ", 
+             SuperscriptBox["z", "2"]}]}], ")"}], 
+          RowBox[{"Cos", "[", 
+           RowBox[{
+            RowBox[{"k", " ", "z"}], " ", "-", " ", 
+            RowBox[{"\[Omega]", " ", "t"}]}], "]"}]}]}], ")"}], ")"}], "2"]}],
+     "]"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.732640356785673*^9, 
+  3.7326403934621*^9}},ExpressionUUID->"01edfc9c-71ee-41d2-8e3f-c99925b28f22"],
+
+Cell[BoxData[
+ RowBox[{"x", " ", 
+  SqrtBox[
+   RowBox[{"1", "+", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"k", " ", 
+        RowBox[{"(", 
+         RowBox[{"a1", "+", 
+          RowBox[{"a1", " ", "z"}], "+", 
+          RowBox[{"a2", " ", 
+           SuperscriptBox["z", "2"]}]}], ")"}], " ", 
+        RowBox[{"Cos", "[", 
+         RowBox[{
+          RowBox[{"k", " ", "z"}], "-", 
+          RowBox[{"t", " ", "\[Omega]"}]}], "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"a1", "+", 
+          RowBox[{"2", " ", "a2", " ", "z"}]}], ")"}], " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{
+          RowBox[{"k", " ", "z"}], "-", 
+          RowBox[{"t", " ", "\[Omega]"}]}], "]"}]}]}], ")"}], 
+     "2"]}]]}]], "Output",
+ CellChangeTimes->{
+  3.732640417641148*^9},ExpressionUUID->"d078e7d3-dc05-4ece-a3e1-\
+545d64d5e055"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.732640209307925*^9, 3.7326402095255423`*^9}, 
+   3.732640276336114*^9},ExpressionUUID->"3427434e-d30d-449a-90ba-\
+a162bb9ba6db"]
+>>>>>>> Stashed changes
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -3389,6 +3936,7 @@ Cell[CellGroupData[{
 Cell[916, 31, 260, 5, 70, "Section"],
 Cell[1179, 38, 1307, 32, 163, "Text"],
 Cell[CellGroupData[{
+<<<<<<< Updated upstream
 Cell[2511, 74, 199, 3, 49, "Subsection"],
 Cell[2713, 79, 225, 5, 30, "Text"],
 Cell[2941, 86, 397, 12, 31, "Input"],
@@ -3426,10 +3974,44 @@ Cell[13232, 374, 4507, 118, 126, "Output"]
 Cell[CellGroupData[{
 Cell[17776, 497, 414, 9, 31, "Input"],
 Cell[18193, 508, 146862, 2450, 223, "Output"]
+=======
+Cell[3070, 85, 199, 3, 54, "Subsection",ExpressionUUID->"3dc4a4c3-53ab-40ac-b633-852b19d2bcb7"],
+Cell[3272, 90, 225, 5, 35, "Text",ExpressionUUID->"7bdccebc-d545-404e-a90c-ca39552c5f78"],
+Cell[3500, 97, 397, 12, 30, "Input",ExpressionUUID->"f4284e97-438d-4e88-a016-1f222a7e2064"],
+Cell[3900, 111, 1895, 49, 219, "Text",ExpressionUUID->"0fb65e26-f3c5-44a8-83bb-8be56c6fab52",
+ InitializationCell->True],
+Cell[CellGroupData[{
+Cell[5820, 164, 869, 25, 168, "Input",ExpressionUUID->"528c8855-acdc-460f-87b4-cf56777f638d",
+ InitializationCell->True],
+Cell[6692, 191, 404, 10, 40, "Message",ExpressionUUID->"c7edee13-397b-4937-90a5-819d69902bea"]
+}, Open  ]],
+Cell[7111, 204, 742, 22, 90, "Input",ExpressionUUID->"1872466f-3325-41c7-b257-1e5fc3b820ec"],
+Cell[CellGroupData[{
+Cell[7878, 230, 1905, 46, 216, "Input",ExpressionUUID->"d37353a9-7cc3-4743-b4d3-74088a040ace"],
+Cell[9786, 278, 1205, 21, 24, "Message",ExpressionUUID->"961548fe-8eac-44c5-9cdd-b11d9f7ad65d"],
+Cell[10994, 301, 348, 6, 34, "Output",ExpressionUUID->"bbca1613-8604-45c7-b0b1-3774fd861887"],
+Cell[11345, 309, 345, 6, 34, "Output",ExpressionUUID->"0711a02a-7185-448f-9b80-b52280c2abbe"],
+Cell[11693, 317, 485, 10, 34, "Output",ExpressionUUID->"ab985d8b-1bd2-4e5c-9fc2-4f6f5b1458ae"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12215, 332, 320, 7, 30, "Input",ExpressionUUID->"59c5e56b-0894-4165-ad14-1f3e66545918"],
+Cell[12538, 341, 310, 7, 34, "Output",ExpressionUUID->"1642a871-0252-40d9-8966-3f185262fafb"]
+}, Open  ]],
+Cell[12863, 351, 154, 3, 30, "Input",ExpressionUUID->"1020c9ee-2786-4423-8737-da769e1e7f18"],
+Cell[13020, 356, 356, 6, 30, "Input",ExpressionUUID->"c80e5047-521b-43cd-9c1a-448d777142ed"],
+Cell[CellGroupData[{
+Cell[13401, 366, 786, 20, 52, "Input",ExpressionUUID->"6f44f805-581b-4d01-a227-357330db3abb"],
+Cell[14190, 388, 4509, 119, 267, "Output",ExpressionUUID->"10986bf6-c05a-4bac-ad44-8e5b385de326"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18736, 512, 414, 9, 30, "Input",ExpressionUUID->"3af4bc94-bfb7-4420-9d1c-cf9028f98e92"],
+Cell[19153, 523, 146862, 2450, 227, "Output",ExpressionUUID->"7a2b0b73-12d1-40b0-bfd2-cd3c301e82a9"]
+>>>>>>> Stashed changes
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
+<<<<<<< Updated upstream
 Cell[165116, 2965, 204, 3, 67, "Subchapter"],
 Cell[165323, 2970, 1218, 26, 156, "Text"],
 Cell[166544, 2998, 758, 25, 52, "Input"],
@@ -3451,12 +4033,45 @@ Cell[173949, 3221, 125, 2, 31, "Output"],
 Cell[174077, 3225, 121, 2, 31, "Output"],
 Cell[174201, 3229, 140, 2, 31, "Output"],
 Cell[174344, 3233, 140, 2, 31, "Output"]
+=======
+Cell[166076, 2980, 204, 3, 65, "Subchapter",ExpressionUUID->"7e83d4bb-c92c-48ef-9a8f-708420c5a4a2"],
+Cell[166283, 2985, 10985, 303, 899, "Text",ExpressionUUID->"d98c2ee9-eb46-47f3-99d3-073a70c73993"],
+Cell[CellGroupData[{
+Cell[177293, 3292, 169, 3, 67, "Section",ExpressionUUID->"bdb2fa93-f12d-49b0-9a6e-b861f614e9f9"],
+Cell[177465, 3297, 1722, 45, 115, "Input",ExpressionUUID->"2dd1f394-a451-4e25-8ff9-8839062a99cf"],
+Cell[179190, 3344, 224, 4, 52, "Input",ExpressionUUID->"4164cafb-79f9-4a1b-af9f-eefc842c4361"],
+Cell[CellGroupData[{
+Cell[179439, 3352, 199, 5, 47, "Input",ExpressionUUID->"ae7190a7-aef5-44ed-aede-6f8720356a5c"],
+Cell[179641, 3359, 226, 6, 50, "Output",ExpressionUUID->"9b740631-39a8-4007-8866-cee9e046a5f0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[179904, 3370, 706, 23, 47, "Input",ExpressionUUID->"c73be687-914f-4291-8506-77b206176a8b"],
+Cell[180613, 3395, 175, 5, 34, "Output",ExpressionUUID->"f4dc7a80-f883-4097-a842-a4d8a0be3ae3"]
+}, Open  ]],
+Cell[180803, 3403, 596, 18, 30, "Input",ExpressionUUID->"32b5c19f-f5e3-40a1-8707-95ba301a535b"],
+Cell[181402, 3423, 374, 12, 30, "Input",ExpressionUUID->"b4b1b644-d57e-4ed7-9da4-78c9e36f6521"],
+Cell[181779, 3437, 155, 3, 35, "Text",ExpressionUUID->"9a30c199-9cb6-4f16-950e-afb4c206167a"]
+>>>>>>> Stashed changes
 }, Open  ]],
 Cell[174499, 3238, 1008, 27, 52, "Input"],
 Cell[175510, 3267, 628, 15, 31, "Input"],
 Cell[CellGroupData[{
+<<<<<<< Updated upstream
 Cell[176163, 3286, 1662, 46, 72, "Input"],
 Cell[177828, 3334, 1085, 30, 47, "Output"]
+=======
+Cell[181971, 3445, 154, 3, 67, "Section",ExpressionUUID->"23e98665-8b42-4072-82d8-b63d66f6f2be"],
+Cell[182128, 3450, 372, 9, 58, "Text",ExpressionUUID->"0c720920-187f-4cb7-9ae0-29d4843411ed"],
+Cell[CellGroupData[{
+Cell[182525, 3463, 1067, 31, 54, "Input",ExpressionUUID->"3562000e-cffa-4d97-a8dd-eea02c9e2137"],
+Cell[183595, 3496, 139, 3, 34, "Output",ExpressionUUID->"4582dc04-eb3c-4dde-9668-41c3b12db909"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[183771, 3504, 1016, 29, 80, "Input",ExpressionUUID->"01edfc9c-71ee-41d2-8e3f-c99925b28f22"],
+Cell[184790, 3535, 878, 28, 58, "Output",ExpressionUUID->"d078e7d3-dc05-4ece-a3e1-545d64d5e055"]
+}, Open  ]],
+Cell[185683, 3566, 177, 3, 30, "Input",ExpressionUUID->"3427434e-d30d-449a-90ba-a162bb9ba6db"]
+>>>>>>> Stashed changes
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
