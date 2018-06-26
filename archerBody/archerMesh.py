@@ -1,14 +1,20 @@
 # Script to manipulate the archer fish body mesh .stl file
+# ToDo: Convert to iPython
 import numpy as np
 import trimesh
 import matplotlib.pyplot as plt
 
+# Read in .stl files of body without fins and body with median fins
 fishy = trimesh.load_mesh('archerfish_rescaled_finless.stl')
 fishyfin = trimesh.load_mesh('archerfish_rescaled_median.stl')
 #fishy.show()
+#fishyfin.show()
 wt = fishy.is_watertight
 
 len = abs(fishy.bounds[0,2]-fishy.bounds[1,2])
+lenfin = abs(fishyfin.bounds[0,2]-fishyfin.bounds[1,2])
+print str(len)+' is fish body length'
+print str(lenfin)+' is length with fins'
 
 # shift origin to y centroid
 cent = fishy.center_mass
@@ -58,6 +64,8 @@ for i, z in enumerate(zlevels):
     centx[i]=(pgon[0].centroid.x)
     centy[i]=(pgon[0].centroid.y)+yshift[i]
 
+m_per_len = yU-yL
+    
 plt.subplot(2,2,1)
 plt.plot(zlevels,areas)
 plt.xlabel('Z (mm)')
@@ -79,6 +87,7 @@ plt.subplot(2,2,3)
 plt.plot(zlevels,yL)
 plt.plot(zlevels,yU)
 plt.plot(zlevels,centy)
+plt.plot(zlevels,m_per_len)
 plt.xlabel('Z (mm)')
 plt.ylabel('Y (mm)')
 
@@ -87,7 +96,7 @@ xtest = np.average(centx, weights=areas)
 ytest = np.average(centy, weights=areas)
 ztest = np.average(zlevels, weights=areas)
 
-#loop to determine COB
+#loop to determine Center of Buoyancy
 xsub = np.zeros(nlev-1)
 ysub = np.zeros(nlev-1)
 zsub = np.zeros(nlev-1)
