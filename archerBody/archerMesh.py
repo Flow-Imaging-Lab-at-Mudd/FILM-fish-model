@@ -26,10 +26,8 @@ fishy.vertices -= shift
 fishyfin.vertices -= shift
 
 # 2d projection for added mass estimate (large-amplitude EBT style?)
-
-
 # create slices along length of fish
-nlev=50
+nlev=180
 zlevels_ends = np.linspace(fishy.bounds[0,2],fishy.bounds[1,2],nlev+2)
 
 # trim extremal levels to prevent code crashes
@@ -64,8 +62,31 @@ for i, z in enumerate(zlevels):
     centx[i]=(pgon[0].centroid.x)
     centy[i]=(pgon[0].centroid.y)+yshift[i]
 
-m_per_len = yU-yL
-    
+# get local width of body in cm (not mm)    
+localwidth = (yU-yL)/10
+
+# use 1/4*pi*rho*s^2 for virtual mass per length (Lighthill)
+# using rho = 1 g/cm^3
+m_per_len = .25*np.pi*np.square(localwidth)
+# units of m_per_len are g/cm
+
+# write mass per length to file
+#print zlevels.shape
+#print m_per_len.shape
+
+#reshape z levels (now also in cm) and mass per length to array
+writedata = np.array([zlevels/10,m_per_len])
+
+# output file
+outfile = 'added_mass_per_length.txt'
+hdr = 'Y'+'\t'+'m'
+f = open(outfile,'wb')
+f.write(bytes(hdr+'\n'))
+f.close()
+f = open(outfile,'ab')
+np.savetxt(f, writedata.T, fmt='%10.5f', delimiter='\t')
+f.close()
+
 plt.subplot(2,2,1)
 plt.plot(zlevels,areas)
 plt.xlabel('Z (mm)')
@@ -112,5 +133,7 @@ plt.subplot(2,2,4)
 plt.plot(zlevels[1:],xsub)
 plt.plot(zlevels[1:],ysub)
 plt.plot(zlevels[1:],cmdist)
+plt.xlabel('Last underwater point')
+plt.ylabel('Center of buoyancy')
 
 plt.show()                      
